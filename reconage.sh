@@ -131,6 +131,10 @@ echo "uncover completed enumeration"
 nmap -sV --script=http-malware-host $dom
 nmap -p80 --script http-google-malware $dom
 
+# ip address vulnerability scanner
+echo $dom | uncover | httpx | nuclei >> /dev/null
+echo "Scanning done for vulnerabilities"
+
 
 fi 
 
