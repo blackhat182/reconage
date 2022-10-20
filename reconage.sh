@@ -125,6 +125,10 @@ echo "nikto completed it's task"
 echo "naabu for port enumeration : " naabu -host $dom >> /dev/null
 echo "naabu completed enumeration"
 
+# uncover for ip address enumeration
+echo "uncover for ip address enumeration" echo $dom | uncover >> /dev/null
+echo "uncover completed enumeration"
+
 
 fi 
 
